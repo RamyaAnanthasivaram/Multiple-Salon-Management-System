@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
+        <item>@font/aclonica</item>
+        <item>@font/andika_new_basic</item>
+        <item>@font/arvo</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/bubblegum_sans</item>
+    </array>
+</resources>

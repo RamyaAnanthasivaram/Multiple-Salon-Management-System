@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cup"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".AdminRegisterActivity"
+    tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-40dp"
+            app:cardCornerRadius="60dp"
+            android:padding="28dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/adSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGNUP"
+                    android:textColor="@color/darkpink"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ad_reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:hint="Username"
+                    android:padding="8dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/ad_reg_phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:padding="8dp"/>
+
+                <EditText
+                    android:id="@+id/ad_reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"/>
+
+                <EditText
+                    android:id="@+id/ad_reg_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"/>
+
+                <EditText
+                    android:id="@+id/ad_reg_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:drawableLeft="@drawable/baseline_location_pin_24"
+                    android:hint="Address"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/ad_reg_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SIGNUP"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/ad_log_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/darkpink"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".BookStoreActivity">
+
+    <!-- Toolbar for back button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="View Service" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER YOUR DETAILS"
+                android:fontFamily="@font/abeezee"
+                android:textColor="@color/darkpink"
+                android:textStyle="bold"
+                android:layout_marginTop="80dp"
+                android:textSize="23sp" />
+
+            <EditText
+                android:id="@+id/storeService_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:text="Service Name"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/storePrice_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                android:text="Store Price"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/storePreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                android:text="Salon Preference"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/whichStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border"
+                android:text="Which Store"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        <EditText
+            android:id="@+id/storeCus_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:textSize="20dp"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:id="@+id/cart_Num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your phone number"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:id="@+id/storeCus_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Date"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Choose your timing"
+            android:textStyle="bold"
+            android:drawablePadding="12dp"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <!-- CheckBoxes for Timing -->
+        <!-- First two CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:30 AM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+        <!-- Last two CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:00 PM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:30 PM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:text="SUBMIT"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:cornerRadius = "10dp"/>
+    </LinearLayout>
+</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/form_border">
+
+    <!-- Service name TextView -->
+    <TextView
+        android:id="@+id/customerNameSV"
+        android:layout_width="200dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Store price TextView -->
+    <TextView
+        android:id="@+id/customerPhoneSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Home price TextView -->
+    <TextView
+        android:id="@+id/preferenceSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"/>
+
+    <!-- Home price TextView -->
+    <TextView
+        android:id="@+id/dateSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"/>
+
+    <!-- Home price TextView -->
+    <TextView
+        android:id="@+id/timeSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/serviceSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"/>
+
+</RelativeLayout>

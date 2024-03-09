@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DB78B9"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="STAFF"
+            app:titleTextColor="@color/black" />
+
+        <!-- CardView for form -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/staff_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:hint="Staff name"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/staff_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:hint="Staff phone number"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/staff_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:hint="Staff email address"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/staff_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_location_pin_24"
+                    android:hint="Staff address"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/staff_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:hint="Create password"
+                    android:padding="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/staff_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ADD STAFF"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_headrer"
+        app:itemIconTint="@color/phoneColor"
+        app:itemTextColor="@color/phoneColor"
+        app:menu="@menu/owner_menu" />
+
+</LinearLayout>

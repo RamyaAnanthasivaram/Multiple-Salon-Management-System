@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/owner_profile"
+            android:icon="@drawable/baseline_person_pin_24"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/owner_appointment"
+            android:icon="@drawable/baseline_date_range_24"
+            android:title="Appointments" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Staff">
+            <menu>
+                <item
+                    android:id="@+id/add_staff"
+                    android:icon="@drawable/baseline_person_add_alt_1_24"
+                    android:title="Add Staff" />
+
+                <item
+                    android:id="@+id/owner_staff_schedule"
+                    android:icon="@drawable/baseline_assignment_add_24"
+                    android:title="Schedule Staff" />
+
+                <item
+                    android:id="@+id/add_names"
+                    android:icon="@drawable/baseline_add_circle_24"
+                    android:title="Add Staff Names" />
+
+
+
+
+
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+
+
+</menu>

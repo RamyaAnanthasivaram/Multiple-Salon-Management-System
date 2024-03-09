@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shop</string>
+
+    <string name="shopping_cart_description">Shopping Cart</string>
+
+    <string name="back_icon_description">Back</string>
+    <string name="menu_icon_description">Menu</string>
+
+    <string name="scroll_view_description">Scrollable content</string>
+    <string name="Open_nav">Open Navigation Drawer</string>
+    <string name="Close_nav">Close Navigation Drawer</string>
+    <string name="select">Select Staff</string>
+
+
+</resources>

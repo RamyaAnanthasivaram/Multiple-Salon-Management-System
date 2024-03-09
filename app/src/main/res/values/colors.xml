@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#FFE5F6</color>
+    <color name="darkpink">#C3288F</color>
+    <color name="gradiantPink">#D21191</color>
+    <color name="form">#C3288F</color>
+    <color name="grey">#BAB7BA</color>
+    <color name="palePink">#FFE5F6</color>
+    <color name="phoneColor">#DB78B9</color>
+</resources>

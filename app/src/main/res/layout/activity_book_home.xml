@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".BookHomeActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER YOUR DETAILS"
+            android:fontFamily="@font/abeezee"
+            android:textColor="@color/darkpink"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp" />
+
+        <EditText
+            android:id="@+id/homeService_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="Service Name"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/homePrice_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="Home Service price"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/homePreference"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:text="Home Service Preference"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/homeCus_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enter your name"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/homeCus_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter your phone number"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cusHome_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Location"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/homeCus_Date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Date"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Choose your timing"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <!-- CheckBoxes for Timing -->
+        <!-- First two CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/homecheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:30 AM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/homecheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+        <!-- Last two CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/homecheckBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:00 PM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/homecheckBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:30 PM"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/homesubmit_btn"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:text="SUBMIT"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:cornerRadius = "10dp"/>
+    </LinearLayout>
+</ScrollView>

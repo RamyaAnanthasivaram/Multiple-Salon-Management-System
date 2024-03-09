@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#DB78B9"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="UPLOAD LOGO"
+        app:titleTextColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/choose_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/cloudupload"
+        android:clickable="true"
+        android:onClick="chooseImageFromGallery"
+        android:contentDescription="Image for choosing from gallery"
+        android:layout_marginTop="50dp"/>
+
+
+    <Button
+        android:id="@+id/upload_b"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:text="UPLOAD IMAGE"
+        android:layout_marginTop="70dp"
+        app:cornerRadius="8dp"
+        android:textColor="@color/black"
+        android:onClick="uploadImageToFirebase"/>
+
+</LinearLayout>
+
+

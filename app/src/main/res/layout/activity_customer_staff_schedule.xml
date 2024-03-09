@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CustomerStaffScheduleActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#DB78B9"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="ADD HOME SERVICES"
+        app:titleTextColor="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textCustomerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:text="Customer ID" />
+
+
+            <EditText
+                android:id="@+id/ownerGettingCustomerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:padding="12dp"
+                android:text="Customer ID" />
+
+            <TextView
+                android:id="@+id/textServiceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Service Name" />
+
+            <EditText
+                android:id="@+id/bookedStoreService_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:padding="12dp"
+                android:text="Service Name" />
+
+
+            <TextView
+                android:id="@+id/textSalonPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Preference" />
+
+
+            <EditText
+                android:id="@+id/bookedStorePreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:padding="12dp"
+                android:text="Salon Preference"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/bookedStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="12dp"
+                android:padding="5dp"
+                android:text="Staff Name" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_border"></Spinner>
+
+            <TextView
+                android:id="@+id/textWhichStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Salon Name" />
+
+
+            <EditText
+                android:id="@+id/bookedWhichStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:padding="12dp"
+                android:text="Which Store" />
+
+            <TextView
+                android:id="@+id/textCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Customer Name" />
+
+            <EditText
+                android:id="@+id/bookedCus_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:padding="12dp"
+                android:text="Enter your name" />
+
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date Of Booking" />
+
+
+            <EditText
+                android:id="@+id/bookedStoreCus_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:padding="12dp"
+                android:text="Enter your Date" />
+
+            <TextView
+                android:id="@+id/bookedTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="12dp"
+                android:padding="5dp"
+                android:text="Timing" />
+
+            <EditText
+                android:id="@+id/BookedTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_border"
+                android:drawableLeft="@drawable/baseline_access_time_filled_24"
+                android:padding="12dp"
+                android:text="Timing" />
+
+            <Button
+                android:id="@+id/bookedSubmit_btn"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="SUBMIT"
+                android:textColor="@color/black"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

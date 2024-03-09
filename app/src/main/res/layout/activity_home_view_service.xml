@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeViewServiceActivity">
+
+    <!-- Horizontal LinearLayout for ImageView containers -->
+    <LinearLayout
+        android:id="@+id/serviceimageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- First ImageView -->
+        <ImageView
+            android:id="@+id/frontStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_storefront_24"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+
+        <!-- Second ImageView -->
+        <ImageView
+            android:id="@+id/home_service_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_home_24"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+    <!-- RecyclerView below the LinearLayout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HomerecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serviceimageContainer"/>
+
+</RelativeLayout>

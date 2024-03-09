@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/form_border"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/customerIdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer ID"/>
+
+    <TextView
+        android:id="@+id/cartServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Name"/>
+
+    <TextView
+        android:id="@+id/cartCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"/>
+
+    <TextView
+        android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preference"/>
+
+    <TextView
+        android:id="@+id/cartPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"/>
+
+    <TextView
+        android:id="@+id/cartBookingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Date"/>
+
+    <TextView
+        android:id="@+id/cartSelectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Time"/>
+</LinearLayout>
